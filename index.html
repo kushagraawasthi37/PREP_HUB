@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepHub - Placement Preparation Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+    <div class="particles-container" id="particles"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">▲</span>
+                <span class="logo-text">PrepHub</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#sections" class="nav-link">Sections</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">Placement Preparation Hub</span>
+            </h1>
+            <p class="hero-subtitle">
+                Master DSA, System Design, Frontend & Core CS — all in one place
+            </p>
+            <a href="#sections" class="cta-button">
+                <span>Explore Sections</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <section class="main-section" id="sections">
+        <div class="container">
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M3 9h18M9 21V9" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">System Design</h3>
+                        <p class="card-description">
+                            Comprehensive guide to designing scalable systems, distributed architectures, and real-world
+                            interview scenarios
+                        </p>
+                        <button class="card-button"
+                            onclick="window.open('https://claude.ai/public/artifacts/3f04a269-6cdc-4aa2-86d8-bbdfd9292f00', '_blank')">
+                            <span>Open</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 10L10 6M10 6H6M10 6V10" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">OOPS</h3>
+                        <p class="card-description">
+                            Master object-oriented programming concepts, design patterns, SOLID principles, and
+                            implementation strategies
+                        </p>
+                        <button class="card-button"
+                            onclick="window.open('https://claude.ai/public/artifacts/de941979-ceb9-4140-be0b-4bf10bd58cb3', '_blank')">
+                            <span>Open</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 10L10 6M10 6H6M10 6V10" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M8 7h8M8 11h8M8 15h8" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">SQL</h3>
+                        <p class="card-description">
+                            Deep dive into SQL queries, database design, indexing strategies, optimization techniques,
+                            and complex joins
+                        </p>
+                        <button class="card-button"
+                            onclick="window.open('https://claude.ai/public/artifacts/d9de392e-ca12-4781-b962-dfa8e16190c9', '_blank')">
+                            <span>Open</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 10L10 6M10 6H6M10 6V10" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">DSA</h3>
+                        <p class="card-description">
+                            Complete roadmap for data structures and algorithms, from basics to advanced patterns and
+                            problem-solving techniques
+                        </p>
+                        <button class="card-button"
+                            onclick="window.open('https://claude.ai/public/artifacts/891f1556-ed38-4c16-aa5e-fd787b1f6e64', '_blank')">
+                            <span>Open</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 10L10 6M10 6H6M10 6V10" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                                <path d="M9 22V12h6v10" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">JavaScript</h3>
+                        <p class="card-description">
+                            Essential JavaScript concepts, ES6+ features, async programming, closures, and
+                            interview-critical topics
+                        </p>
+                        <button class="card-button"
+                            onclick="window.open('https://claude.ai/public/artifacts/cb4f70d6-a5e0-449b-854a-7d980be52544', '_blank')">
+                            <span>Open</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 10L10 6M10 6H6M10 6V10" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Frontend Advanced</h3>
+                        <p class="card-description">
+                            Advanced frontend concepts, React patterns, performance optimization, state management, and
+                            modern architectures
+                        </p>
+                        <button class="card-button"
+                            onclick="window.open('https://claude.ai/public/artifacts/0ac548a1-19f5-4033-863b-983440a9b9a5', '_blank')">
+                            <span>Open</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 10L10 6M10 6H6M10 6V10" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 PrepHub. Your journey to placement success starts here.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
