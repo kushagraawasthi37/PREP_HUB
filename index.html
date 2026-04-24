@@ -174,6 +174,30 @@
                             problem-solving techniques
                         </p>
                         <button class="card-button"
+                            onclick="window.open('https://claude.ai/public/artifacts/0dee03fc-756a-4872-8ad8-71a7ad9ad48b', '_blank')">
+                            <span>Open</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 10L10 6M10 6H6M10 6V10" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">DSA Patterns</h3>
+                        <p class="card-description">
+                            Master essential DSA problem-solving patterns — sliding window, two pointers, dynamic programming, graphs, and more
+                        </p>
+                        <button class="card-button"
                             onclick="window.open('https://claude.ai/public/artifacts/269eb862-4d17-425a-b249-c158bf63c2ba', '_blank')">
                             <span>Open</span>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -348,22 +372,14 @@
                 <div class="weekly-grid heavy-days" id="heavyDaysGrid"></div>
 
                 <div class="subject-legend">
-                    <div class="legend-item" style="--color: #c4b5fd"><span class="legend-dot"></span><span>DSA</span>
-                    </div>
-                    <div class="legend-item" style="--color: #bfdbfe"><span class="legend-dot"></span><span>SQL</span>
-                    </div>
-                    <div class="legend-item" style="--color: #fecaca"><span class="legend-dot"></span><span>System
-                            design</span></div>
-                    <div class="legend-item" style="--color: #d9f99d"><span class="legend-dot"></span><span>OOP</span>
-                    </div>
-                    <div class="legend-item" style="--color: #fde68a"><span
-                            class="legend-dot"></span><span>JavaScript</span></div>
-                    <div class="legend-item" style="--color: #fbcfe8"><span class="legend-dot"></span><span>React</span>
-                    </div>
-                    <div class="legend-item" style="--color: #e5e7eb"><span class="legend-dot"></span><span>Frontend
-                            advanced</span></div>
-                    <div class="legend-item" style="--color: #fecdd3"><span
-                            class="legend-dot"></span><span>Revision</span></div>
+                    <div class="legend-item" style="--color: #c4b5fd"><span class="legend-dot"></span><span>DSA</span></div>
+                    <div class="legend-item" style="--color: #bfdbfe"><span class="legend-dot"></span><span>SQL</span></div>
+                    <div class="legend-item" style="--color: #fecaca"><span class="legend-dot"></span><span>System design</span></div>
+                    <div class="legend-item" style="--color: #d9f99d"><span class="legend-dot"></span><span>OOP</span></div>
+                    <div class="legend-item" style="--color: #fde68a"><span class="legend-dot"></span><span>JavaScript</span></div>
+                    <div class="legend-item" style="--color: #fbcfe8"><span class="legend-dot"></span><span>React</span></div>
+                    <div class="legend-item" style="--color: #e5e7eb"><span class="legend-dot"></span><span>Frontend advanced</span></div>
+                    <div class="legend-item" style="--color: #fecdd3"><span class="legend-dot"></span><span>Revision</span></div>
                 </div>
             </div>
 
@@ -373,15 +389,13 @@
                     <input type="text" id="taskInput" class="planner-input"
                         placeholder="What do you want to accomplish today?" maxlength="200">
                     <button id="addTaskBtn" class="add-task-btn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                         </svg>
                         Add Task
                     </button>
                 </div>
-                <!-- char counter injected here by JS -->
 
                 <div class="planner-stats">
                     <div class="stat-item">
@@ -398,12 +412,9 @@
                     </div>
                 </div>
 
-                <!-- filter bar + date + progress bar injected by JS -->
-
                 <div class="tasks-container" id="tasksContainer">
                     <div class="empty-state" id="emptyState">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M9 11l3 3L22 4"></path>
                             <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
                         </svg>
@@ -472,8 +483,7 @@
                 </div>
                 <div class="form-group">
                     <label>Hours</label>
-                    <input type="number" id="taskBlockHours" class="form-control" min="0.5" max="12" step="0.5"
-                        value="1">
+                    <input type="number" id="taskBlockHours" class="form-control" min="0.5" max="12" step="0.5" value="1">
                 </div>
             </div>
             <div class="modal-footer">
