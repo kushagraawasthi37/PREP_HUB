@@ -1719,3 +1719,115 @@ body {
         font-size: 1.1rem;
     }
 }
+/* ============================================================
+   INTERVIEW QUESTIONS CARD
+   ============================================================ */
+.card--interview {
+    grid-column: span 1;
+    overflow: hidden;
+    transition: var(--transition-spring);
+}
+
+.card--interview.panel-open {
+    /* let it grow naturally */
+}
+
+.interview-icon {
+    background: linear-gradient(135deg, rgba(251,146,60,0.15), rgba(239,68,68,0.15));
+    border-color: rgba(251,146,60,0.3) !important;
+}
+
+.interview-icon svg {
+    stroke: #fb923c;
+}
+
+.interview-toggle-btn {
+    background: linear-gradient(135deg, #fb923c, #ef4444) !important;
+}
+
+.interview-toggle-btn:hover {
+    box-shadow: 0 4px 20px rgba(251,146,60,0.5) !important;
+}
+
+.toggle-arrow {
+    transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+.panel-open .toggle-arrow {
+    transform: rotate(180deg);
+}
+
+/* Sliding panel */
+.interview-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1);
+}
+
+.interview-panel.open {
+    max-height: 400px;
+}
+
+.interview-panel-inner {
+    padding: 0 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* Sub-section links */
+.interview-sub {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 1rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.interview-sub:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(251,146,60,0.35);
+    transform: translateX(4px);
+}
+
+.interview-sub svg {
+    margin-left: auto;
+    opacity: 0.55;
+    flex-shrink: 0;
+    transition: opacity 0.2s;
+}
+
+.interview-sub:hover svg {
+    opacity: 1;
+}
+
+.sub-label {
+    flex: 1;
+}
+
+/* Badges */
+.sub-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 46px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+}
+
+.sub-badge.cpp   { background: rgba(99,102,241,0.2); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.3); }
+.sub-badge.js    { background: rgba(251,191,36,0.15); color: #fde68a; border: 1px solid rgba(251,191,36,0.3); }
+.sub-badge.db    { background: rgba(6,182,212,0.15); color: #67e8f9; border: 1px solid rgba(6,182,212,0.3); }
+.sub-badge.node  { background: rgba(16,185,129,0.15); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.3); }
+.sub-badge.react { background: rgba(56,189,248,0.15); color: #7dd3fc; border: 1px solid rgba(56,189,248,0.3); }

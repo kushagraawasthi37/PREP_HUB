@@ -862,3 +862,11 @@ window.saveTaskBlock = () => {};
 window.weeklyPlanner = {
   deleteBlock: (day, idx) => weeklyPlanner?.deleteBlock(day, idx),
 };
+
+/* ── Interview Questions panel toggle ── */
+function toggleInterviewPanel() {
+  const card = document.getElementById("interviewCard");
+  const panel = document.getElementById("interviewPanel");
+  const isOpen = panel.classList.toggle("open");
+  card.classList.toggle("panel-open", isOpen);
+}
